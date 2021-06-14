@@ -114,8 +114,7 @@ theme: matery
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo:
-    github:  https://github.com/YIYEXINGCHEN-wu/yiyexingchen-wu.github.io.git
+  repository: git@github.com:YIYEXINGCHEN-wu/yiyexingchen-wu.github.io.git
     # coding: https://git.coding.net/hwsun/hwsun.git
     # gitee: https://gitee.com/hwsun/hwsun.git
   branch: main
