@@ -1,0 +1,625 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="留言板">
+    <meta name="baidu-site-verification" content="#">
+    <meta name="google-site-verification" content="#">
+    <meta name="description" content="留言板">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>留言板</title> 	
+    <link rel="icon" type="image/jpeg" href="./imgs/icon.png">
+
+    <link rel="stylesheet" type="text/css" href="./message_files/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./message_files/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./message_files/aos.css">
+    <link rel="stylesheet" type="text/css" href="./message_files/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./message_files/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="./message_files/matery.css">
+    <link rel="stylesheet" type="text/css" href="./message_files/my.css">
+	
+	
+
+    <script src="./message_files/push.js.下载"></script>
+	<script src="./message_files/hm.js.下载"></script>
+	<script src="./message_files/jquery-2.2.0.min.js.下载"></script>
+    <!-- 今日诗词 -->
+    <script src="./message_files/jinrishici.js.下载" charset="utf-8"></script>
+    
+	
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "#";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>        
+    
+
+<link rel="stylesheet" href="./message_files/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="./message_files/prism-line-numbers.css" type="text/css"><style type="text/css">.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}</style><link rel="prefetch"><meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;百度统计&quot;:-1,&quot;jQuery&quot;:&quot;2.2.0&quot;,&quot;SPDY&quot;:-1,&quot;Font Awesome&quot;:-1}"><script type="text/javascript" src="chrome-extension://idjbhfcodofelbdbhaekgcecaphcgohh/js/detector.js"></script></head>
+
+
+    <body data-aos-easing="ease-in-out-sine" data-aos-duration="700" data-aos-delay="100">
+
+        <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="https://university-story.top" class="waves-effect waves-light">
+                    <span class="logo-span" style="font-size:20px" >弗兰农大信科三班</span>
+                </a>
+            </div>
+</div>
+
+        </div>
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+    </nav>
+
+</header>
+
+<style type="text/css">
+    /* don't remove. */
+    .about-cover {
+        height: 75vh;
+    }
+</style>
+
+<div class="bg-cover pd-header about-cover rainbow" style="background-image: url(./imgs/defaultBgImg.jpg);">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align" style="color:#55A9B6">
+                <!-- 
+                    留言
+                 -->
+                
+                    留&nbsp;&nbsp;言
+                
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br>
+<script>
+$('.bg-cover').css('background-image', 'url(./imgs/bg.jpg)');
+</script>
+
+
+    </div>
+</div>
+<link rel="stylesheet" type="text/css" href="./message_files/main.min.css">
+<main class="content" style="min-height: 844px;">
+	
+<div class="sheet-content">	
+	
+	<div class="poem-wrap">
+		<div class="poem-border poem-left"></div>
+		<div class="poem-border poem-right"></div>
+		<h1>一言</h1>
+		<p id="poem">在路上，我们永远年轻，永远热泪盈眶。</p>
+		<p id="info">杰克·凯鲁亚克</p>
+	</div>
+	<p><h3 style="text-align:center">一个简单的留言板 - 留言须知</h3></p>
+	<p style="text-align:center">一、不得发表违反中华人民共和国宪法和法律、违反改革开放和四项基本原则的言论；</p>
+	<p style="text-align:center">二、不得发表造谣、诽谤他人的言论；</p>
+	<p style="text-align:center">三、请勿发表任何形式的广告，企业推广产品或服务；</p>
+	<p style="text-align:center">四、本栏目拥有发布、编辑、删除网上留言的权利，凡不符合本须知规定的留言将予以删除；</p>
+	<p style="text-align:center">五、留言者承担一切因留言行为而直接或间接引起的法律责任；</p>
+	<p style="text-align:center">六、该留言板所有解释权归弗兰农大18级信科三班；</p>
+	<p style="text-align:center">七、如在本站点留言，即表明已阅读并接受了上述各项条款。</p>
+</div>
+
+<br>    
+
+<div class="container row">
+
+<style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+    /* valine 评论框增加背景图片 */
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments input[type=text],
+    #vcomments input[type=email],
+    #vcomments input[type=url],
+    #vcomments textarea {
+        box-sizing: border-box;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #42b983;
+        font-weight: 500;
+        /* text-decoration: underline; */
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    /* 修复评论第一行位置错位 */
+    .v .vlist .vcard {
+    padding-top: 2.5em !important ;
+    }
+</style>
+
+<div class="card valine-card aos-init aos-animate" data-aos="fade-up">
+<div id="vcomments" class="card-content v"></div>
+</div>
+
+<script src="./message_files/av-min.js"></script>
+<script src="./message_files/Valine.min.js"></script>
+
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'trQMlXggdpkzYRD0f8hUeeD6-gzGzoHsz',
+        appKey: 'vIigIGoI7lWN7R0XfgdVulTj',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '这儿是留言～',
+		emojiCDN: 'https://cdn.jsdelivr.net/gh/yiyexingchen-wu/yiyexingchen-wu.github.io@v0.0.1/emoj/', 
+		emojiMaps: {
+        "emoji1": "bili_1.png",
+        "emoji2": "bili_2.png",
+		"emoji3": "bili_3.png",
+		"emoji4": "bili_4.png",
+		"emoji5": "bili_5.png",
+		"emoji6": "bili_6.png",
+		"emoji7": "bili_7.png",
+		"emoji8": "bili_8.png",
+		"emoji9": "bili_9.png",
+		"emoji10": "bili_10.png",
+		"emoji11": "bili_11.png",
+		"emoji12": "bili_12.png",
+		"emoji13": "bili_13.png",
+		"emoji14": "bili_14.png",
+		"emoji15": "bili_15.png",
+		"emoji16": "bili_16.png",
+		"emoji17": "bili_17.png",
+		"emoji18": "bili_18.png",
+		"emoji19": "bili_19.png",
+		"emoji20": "bili_20.png",
+		"emoji21": "bili_21.png",
+		"emoji22": "bili_22.png",
+		"emoji23": "bili_23.png",
+		"emoji24": "bili_24.png",
+		"emoji25": "bili_25.png",
+		"emoji26": "bili_26.png",
+		"emoji27": "bili_27.png",
+		"emoji28": "bili_28.png",
+		"emoji29": "bili_29.png",
+		"emoji30": "bili_30.png",
+		"emoji31": "bili_31.png",
+		"emoji32": "bili_32.png",
+		"emoji33": "bili_33.png",
+		"emoji34": "bili_34.png",
+		"emoji35": "bili_35.png",
+		"emoji36": "bili_36.png",
+		"emoji37": "bili_37.png",
+		"emoji38": "bili_38.png",
+		"emoji39": "bili_39.png",
+		"emoji40": "bili_40.png",
+		"emoji41": "bili_41.png",
+		"emoji42": "bili_42.png",
+		"emoji43": "bili_43.png",
+		"emoji44": "bili_44.png",
+		"emoji45": "bili_45.png",
+		"emoji46": "bili_46.png",
+		"emoji47": "bili_47.png",
+		"emoji48": "bili_48.png",
+		"emoji49": "bili_49.png",
+        // ... 更多表情
+		}
+    });
+
+</script>
+</div>
+</main>
+<footer class="page-footer bg-color">
+    <div class="row center-align container">
+        <div class="col s12 m8 l8 copy-right">
+            © 2021 YiYeXingChen. <span class="with-love" id="heart"><i class="fa fa-heart" style="color:#ff71a8"></i> </span> <a href="https://beian.miit.gov.cn/">湘ICP备2020024238号-1</a>
+
+            <br>
+            <span id="sitetime">本站已勉强运行 1 年 309 天 19 小时 50 分钟 28 秒</span>
+            <br>
+
+            
+
+            
+                    
+                        <span id="busuanzi_container_site_pv" style="display: inline;"></span>
+                        总访问量: <span id="busuanzi_value_site_pv" class="white-color">153583</span>
+                    
+        
+                    
+                        <span id="busuanzi_container_site_uv" style="display: inline;"></span>
+                        人次&nbsp; | &nbsp;访客人数: <span id="busuanzi_value_site_uv" class="white-color">44882</span> 人
+            
+            <br>
+        </div>
+
+        <div class="col s12 m4 l4 social-link social-statis">
+			
+		</div>
+
+    </div>
+</footer>
+
+<div class="progress-bar" style="width: 3.06537%;"></div>
+
+<!-- 不蒜子计数初始值纠正 -->
+<script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);
+        var pvcountOffset = 0;
+        var uvcountOffset = 0;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) +
+                    pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) +
+                    uvcountOffset); // 加上初始数据 
+                clearInterval(int);
+            }
+        }
+    });
+</script>
+
+<script language="javascript">
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+
+        var t1 = Date.UTC(2021, 06, 15, 00, 00, 00); //北京时间2019-8-1 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes *
+            minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已勉强运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours +
+            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒" ;
+    } /*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+
+
+
+
+<div id="backTop" class="top-scroll" style="display: block;">
+    <a class="btn-floating btn-large waves-effect waves-light" href="https://sunhwee.com/about#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+        <script src="./message_files/materialize.min.js.下载"></script>
+        <script src="./message_files/masonry.pkgd.min.js.下载"></script>
+        <script src="./message_files/aos.js.下载"></script>
+        <script src="./message_files/scrollProgress.min.js.下载"></script>
+        <script src="./message_files/lightgallery-all.min.js.下载"></script>
+        <script src="./message_files/matery.js.下载"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '#');
+</script>
+
+
+
+        
+            <script src="./message_files/clicklove.js.下载"></script>
+            <script async="" src="./message_files/busuanzi.pure.mini.js.下载"></script>
+<style type="text/css">
+  #weather-float-he {
+    position: absolute;
+    z-index: 9999;
+    padding: 0px;
+    top: 8px;
+    left: 8px;
+  }
+</style>
+<canvas width="1316" height="1009" style="display: block; position: fixed; margin: 0px; padding: 0px; border: 0px; outline: 0px; left: 0px; top: 0px; width: 100%; height: 100%; z-index: -1;"></canvas>
+        
+</body></html>
