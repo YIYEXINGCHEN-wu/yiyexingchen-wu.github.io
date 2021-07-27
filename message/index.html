@@ -27,8 +27,6 @@
     <script src="./message_files/push.js.下载"></script>
 	<script src="./message_files/hm.js.下载"></script>
 	<script src="./message_files/jquery-2.2.0.min.js.下载"></script>
-    <!-- 今日诗词 -->
-    <script src="./message_files/jinrishici.js.下载" charset="utf-8"></script>
     
 	
     <script>
@@ -553,7 +551,7 @@ $('.bg-cover').css('background-image', 'url(./imgs/bg.jpg)');
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
 
-        var t1 = Date.UTC(2021, 06, 15, 00, 00, 00); //北京时间2019-8-1 00:00:00
+        var t1 = Date.UTC(2021, 06, 15, 00, 00, 00); //北京时间2021年6月15日
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);
@@ -564,7 +562,7 @@ $('.bg-cover').css('background-image', 'url(./imgs/bg.jpg)');
             minutes) / seconds);
         document.getElementById("sitetime").innerHTML = "本站已勉强运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours +
             " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒" ;
-    } /*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    } 
     siteTime();
 </script>
         <script src="./message_files/materialize.min.js.下载"></script>
